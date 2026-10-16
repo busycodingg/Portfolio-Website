@@ -1,14 +1,15 @@
 import ProjectClient from "./ProjectClient";
 
+const description =
+  "The website for Waystream, an audio live-streaming platform — designed to speak to broadcasters and listeners separately and get both to start for free.";
+
 export const metadata = {
   title: "Waystream Case Study — Grace",
-  description:
-    "Africa's first audio streaming platform built to give creators, churches, and communities a voice without bandwidth barriers or foreign payment walls.",
+  description,
   openGraph: {
     title: "Waystream Case Study — Grace",
-    description:
-      "Africa's first audio streaming platform built to give creators, churches, and communities a voice without bandwidth barriers or foreign payment walls.",
-    images: ["/projects/waystream/hero.png"],
+    description,
+    images: ["/projects/waystream/hero.jpg"],
   },
 };
 

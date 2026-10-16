@@ -31,6 +31,48 @@ const fadeUp = {
 };
 
 export default function WaystreamCaseStudy() {
+  const principleImg = (src, alt) => (
+    <div className="cs-principle-mockup">
+      <motion.img
+        src={src}
+        alt={alt}
+        style={{ borderRadius: "12px" }}
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      />
+    </div>
+  );
+
+  const breakout = (src, alt) => (
+    <motion.div
+      className="cs-full-breakout"
+      variants={fadeUp}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+    >
+      <div className="cs-mockup-full no-bg">
+        <motion.img
+          src={src}
+          alt={alt}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        />
+      </div>
+    </motion.div>
+  );
+
+  const sectionProps = {
+    className: "cs-section-grid",
+    variants: staggerContainer,
+    initial: "hidden",
+    whileInView: "show",
+    viewport: { once: true, margin: "-100px" },
+  };
 
   return (
     <main className="case-study-container">
@@ -39,30 +81,25 @@ export default function WaystreamCaseStudy() {
 
         {/* ── 01  HOOK ── */}
         <section className="case-study-hero">
-          <motion.div
-            className="cs-hero-grid"
-            variants={staggerContainer}
-            initial="hidden"
-            animate="show"
-          >
+          <motion.div className="cs-hero-grid" variants={staggerContainer} initial="hidden" animate="show">
             <motion.div className="cs-hero-left" variants={staggerContainer}>
               <motion.h1 className="case-study-title" variants={fadeUp}>
                 <span className="cs-title-line">Waystream</span>
               </motion.h1>
 
-              <motion.p variants={fadeUp} className="case-study-body-text" style={{ marginTop: '2rem' }}>
-                Africa's first audio streaming platform built to give creators, churches, and communities a voice without bandwidth barriers or foreign payment walls.
+              <motion.p variants={fadeUp} className="case-study-body-text" style={{ marginTop: "2rem" }}>
+                The website for an audio live-streaming platform — designed to speak to broadcasters and listeners separately, and to get both of them to start for free.
               </motion.p>
 
               <motion.div variants={fadeUp} className="case-study-meta">
                 <div className="meta-row">
                   <div className="meta-item">
                     <span className="meta-label dimmed">Role</span>
-                    <span className="meta-value">Solo UX/UI Designer</span>
+                    <span className="meta-value">UX/UI Designer</span>
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">Platform</span>
-                    <span className="meta-value">Mobile &middot; Web &middot; Desktop</span>
+                    <span className="meta-value">Website</span>
                   </div>
                 </div>
                 <hr className="meta-divider" />
@@ -73,27 +110,39 @@ export default function WaystreamCaseStudy() {
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">Status</span>
-                    <span className="meta-value">Shipped</span>
+                    <span className="meta-value">Live</span>
                   </div>
                 </div>
                 <hr className="meta-divider" />
                 <div className="meta-row">
                   <div className="meta-item">
-                    <span className="meta-label dimmed">Timeline</span>
-                    <span className="meta-value">3+ Years</span>
+                    <span className="meta-label dimmed">Audience</span>
+                    <span className="meta-value">Broadcasters &amp; Listeners</span>
                   </div>
                   <div className="meta-item">
-                    <span className="meta-label dimmed">Users</span>
-                    <span className="meta-value">40,000+</span>
+                    <span className="meta-label dimmed">Scope</span>
+                    <span className="meta-value">Structure, UX &amp; UI</span>
                   </div>
                 </div>
+              </motion.div>
+
+              <motion.div variants={fadeUp} style={{ marginTop: "1.5rem" }}>
+                <a
+                  href="https://waystream.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="meta-value"
+                  style={{ textDecoration: "underline", textUnderlineOffset: "4px" }}
+                >
+                  View the live site ↗
+                </a>
               </motion.div>
             </motion.div>
 
             <motion.div className="cs-hero-right" variants={staggerContainer}>
               <motion.img
-                src="/projects/waystream/hero.png"
-                alt="Waystream Hero"
+                src="/projects/waystream/hero.jpg"
+                alt="Waystream website shown on a laptop"
                 className="case-study-hero-image"
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -105,216 +154,108 @@ export default function WaystreamCaseStudy() {
 
         {/* ── 02  PROBLEM FRAMING ── */}
         <section className="cs-section">
-          <motion.div
-            className="cs-section-grid"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-100px" }}
-          >
+          <motion.div {...sectionProps}>
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">02  Problem framing</span>
-              <h2 className="cs-section-title">The gap existing platforms ignored</h2>
+              <h2 className="cs-section-title">One product, two very different visitors.</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Platforms like Spotify, Apple Music, and YouTube are engineered for global audiences  not African creators. Nigerian churches, independent podcasters and DJs trying to broadcast to their communities hit the same walls every time: payment systems that didn't support local currencies across Africa, video-first platforms that choked on low-bandwidth connections, and no real-time broadcasting for the creators who needed it most.
+                Waystream lets anyone broadcast live audio and podcasts from a phone or PC, and lets listeners tune in, pause, rewind and chat in real time. Its broadcasters range from musicians and radio stations to churches streaming their services.
+              </motion.p>
+              <motion.p variants={fadeUp} className="cs-section-body">
+                The website has to sell the same platform to two people who want different things: a broadcaster weighing up tools, quality and price, and a listener who just wants to press play. I designed the structure and interface so each one finds their reason to start without wading through the other&apos;s.
               </motion.p>
 
               <motion.div variants={fadeUp} className="cs-card-pair">
                 <div className="cs-card">
                   <span className="cs-card-tag">Business problem</span>
-                  <p>No platform existed that combined live audio broadcasting, on-demand podcasting, and local payment infrastructure for African creators in one place.</p>
+                  <p>An audio streaming platform needed a website that wins broadcasters on features and price, builds trust through the communities already using it, and grows the listening audience at the same time.</p>
                 </div>
                 <div className="cs-card">
                   <span className="cs-card-tag">User problem</span>
-                  <p>Creators were losing audiences they'd already built  not because their content was bad, but because the tools available weren't built for their reality.</p>
+                  <p>A broadcaster needs to know they can go live easily, sound good and afford it in their own currency; a listener needs to see why this is worth downloading.</p>
                 </div>
               </motion.div>
-              <motion.div
-                className="cs-full-breakout"
-                variants={fadeUp}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-              >
-                <div className="cs-mockup-full no-bg">
-                  <motion.img
-                    src="/projects/waystream/fragmented.png"
-                    alt="Current Fragmented Ecosystem Mapping"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                  />
-                </div>
-              </motion.div>
+            </motion.div>
+          </motion.div>
 
+          {breakout("/projects/waystream/problem.jpg", "Waystream — Stream, Listen and Share")}
+
+          <motion.div {...sectionProps} className="cs-section-grid cs-section-grid--centered">
+            <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.div variants={fadeUp} className="cs-statement">
                 <span className="cs-card-tag">Problem statement</span>
                 <blockquote className="cs-blockquote">
-                  "How might we design a live broadcasting experience so simple that a church admin in Lagos can go live to their congregation in under 60 seconds  from any device, on any network?"
+                  &quot;How might we show broadcasters and listeners what Waystream does for them, on one site, without making either feel it&apos;s meant for someone else?&quot;
                 </blockquote>
               </motion.div>
             </motion.div>
           </motion.div>
         </section>
 
-        {/* ── 03  RESEARCH & DISCOVERY ── */}
+        {/* ── 03  STRUCTURING THE CONTENT ── */}
         <section className="cs-section">
-          <motion.div
-            className="cs-section-grid"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-100px" }}
-          >
+          <motion.div {...sectionProps}>
             <motion.div className="cs-section-left" variants={fadeUp}>
-              <span className="cs-section-tag">03  Research &amp; discovery</span>
-              <h2 className="cs-section-title">What creators actually needed</h2>
+              <span className="cs-section-tag">03  Structuring the content</span>
+              <h2 className="cs-section-title">A shared front door, then a page for each audience.</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Spoke directly with creators across Waystream's core audience segments  church admins, DJs, independent and podcasters  to understand how they were currently reaching their audiences and where they were breaking down.
+                The homepage introduces Waystream to everyone in three verbs — Stream, Listen, Share — and then each audience gets its own page with its own story, before Pricing and Download close the loop.
               </motion.p>
 
-              <motion.div variants={fadeUp} className="cs-research-grid">
-                <div className="cs-research-card">
-                  <span className="cs-research-type">User conversations</span>
-                  <span className="cs-research-stat">Churches, DJs, podcasters</span>
-                </div>
-                <div className="cs-research-card">
-                  <span className="cs-research-type">Competitive audit</span>
-                  <span className="cs-research-stat">5 platforms  Spotify, Apple Music, YouTube, Anchor, Mixlr</span>
-                </div>
-                <div className="cs-research-card">
-                  <span className="cs-research-type">Journey mapping</span>
-                  <span className="cs-research-stat">Broadcaster setup-to-live flow</span>
-                </div>
-              </motion.div>
-
-              <motion.h3 variants={fadeUp} className="cs-sub-heading">Key insights</motion.h3>
+              <motion.h3 variants={fadeUp} className="cs-sub-heading">What shaped the structure</motion.h3>
               <motion.div variants={fadeUp} className="cs-insights">
                 <div className="cs-insight">
                   <span className="cs-insight-num">1</span>
-                  <p>Creators were promoting live events on WhatsApp and Instagram but had nowhere to actually host the stream affordably  they'd link out to YouTube and lose control of the experience entirely.</p>
+                  <p>Broadcaster and Listener sit first in the main menu, so visitors choose their side before they meet any detail.</p>
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">2</span>
-                  <p>Nigerian churches were the most underserved segment. They had large, loyal audiences ready to listen and donate  but no platform that accepted local payment methods or offered a simple enough broadcast setup.</p>
+                  <p>The Broadcasters page is organised by use case — livestreams, podcasts, events, church services and radio shows — so each type of broadcaster can recognise themselves.</p>
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">3</span>
-                  <p>The most common request across every user type was the same: "I just want to go live from my phone without needing a cameraman, an editor, or a dollar card."</p>
+                  <p>Trust comes early: broadcaster logos appear straight after the hero, and testimonials from a musician and church media teams sit between the feature sections.</p>
                 </div>
               </motion.div>
-
-              <motion.h3 variants={fadeUp} className="cs-sub-heading">Target User Archetypes</motion.h3>
-              <motion.div variants={fadeUp} className="cs-personas-grid">
-                <div className="cs-persona-card">
-                  <div className="cs-persona-header">
-                    <div className="cs-persona-avatar">⛪</div>
-                    <div className="cs-persona-identity">
-                      <h4>The Church Admin</h4>
-                      <span>High frequency &middot; Community scale</span>
-                    </div>
-                  </div>
-                  <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Core Need</span>
-                    <p>Reliable Sunday morning broadcast to domestic and diaspora members  requires zero technical friction and localized payment support (Naira) for donations.</p>
-                  </div>
-                  <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Primary Frustration</span>
-                    <p>Existing tools require dollar cards and stable 4G. YouTube pushes members to secular content after the service ends, breaking the communal experience.</p>
-                  </div>
-                </div>
-
-                <div className="cs-persona-card">
-                  <div className="cs-persona-header">
-                    <div className="cs-persona-avatar">🎤</div>
-                    <div className="cs-persona-identity">
-                      <h4>The Independent Creator</h4>
-                      <span>Growth-focused &middot; Content-heavy</span>
-                    </div>
-                  </div>
-                  <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Core Need</span>
-                    <p>Modular dashboard to manage live audio shows and recorded podcasts in one space. Needs to see growth metrics (listeners, engagement) instantly.</p>
-                  </div>
-                  <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Primary Frustration</span>
-                    <p>Fragmented tools. Having to host audio on one platform, live stream on another, and collect payments on a third  losing data and audience in the middle.</p>
-                  </div>
-                </div>
-              </motion.div>
-
             </motion.div>
           </motion.div>
         </section>
 
         {/* ── 04  DESIGN PRINCIPLES ── */}
         <section className="cs-section">
-          <motion.div
-            className="cs-section-grid"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-100px" }}
-          >
+          <motion.div {...sectionProps}>
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">04  Design principles</span>
-              <h2 className="cs-section-title">Two rules that guided every decision</h2>
+              <h2 className="cs-section-title">Three rules for a site that sounds like its product</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
-              <motion.p variants={fadeUp} className="cs-section-body">
-                To solve for the Lagos church admin and the independent creator, I defined two principles that optimized for low-bandwidth reality and high-frequency use.
-              </motion.p>
-
               <motion.div variants={fadeUp} className="cs-principles">
                 <div className="cs-principle">
                   <span className="cs-principle-num">Principle 01</span>
                   <div className="cs-principle-content">
-                    <h4>One tap to live</h4>
-                    <p>Broadcasting setup must be fast enough to start mid-service. Every extra field is a reason to abandon the stream.</p>
-                    <div className="cs-principle-mockup">
-                      <motion.img
-                        src="/projects/waystream/Principle 01.png"
-                        alt="Principle 01: One tap to live"
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                      />
-                    </div>
+                    <h4>Give each audience its own voice</h4>
+                    <p>The Broadcasters page opens with &quot;Express Your Voice&quot; and Start for free; the Listeners page opens with &quot;Stream for free&quot; and Start listening — the same layout, with a different promise and a different action.</p>
+                    {principleImg("/projects/waystream/principle-1.jpg", "Principle 01: Give each audience its own voice")}
                   </div>
                 </div>
                 <div className="cs-principle">
                   <span className="cs-principle-num">Principle 02</span>
                   <div className="cs-principle-content">
-                    <h4>No foreign barriers</h4>
-                    <p>Optimized for mid-range Android devices on 3G/Edge networks. Native support for local payment gateways for automated donation payouts.</p>
-                    <div className="cs-principle-dual-mockup">
-                      <div className="cs-principle-mockup cs-principle-mockup--mobile">
-                        <motion.img
-                          src="/projects/waystream/mobile 1.png"
-                          alt="Principle 02: Mobile view 1"
-                          initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 0.6 }}
-                        />
-                      </div>
-                      <div className="cs-principle-mockup cs-principle-mockup--mobile">
-                        <motion.img
-                          src="/projects/waystream/mobile 2.png"
-                          alt="Principle 02: Mobile view 2"
-                          initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 0.6, delay: 0.2 }}
-                        />
-                      </div>
-                    </div>
+                    <h4>Show the studio, not just the claim</h4>
+                    <p>Instead of describing the broadcasting tools, &quot;Broadcasting Made Easy&quot; shows the live studio itself — mic and playlist levels, the live timer, the Go Live button and the audience chat — on a laptop.</p>
+                    {principleImg("/projects/waystream/principle-2.jpg", "Principle 02: Show the studio, not just the claim")}
+                  </div>
+                </div>
+                <div className="cs-principle">
+                  <span className="cs-principle-num">Principle 03</span>
+                  <div className="cs-principle-content">
+                    <h4>Make the price feel local and low-risk</h4>
+                    <p>Pricing leads with &quot;Broadcast for Free&quot;, shows every plan in local currency, and lets broadcasters switch between daily, monthly, quarterly and yearly billing, with the saving on yearly called out.</p>
+                    {principleImg("/projects/waystream/principle-3.jpg", "Principle 03: Make the price feel local and low-risk")}
                   </div>
                 </div>
               </motion.div>
@@ -322,152 +263,63 @@ export default function WaystreamCaseStudy() {
           </motion.div>
         </section>
 
+        {/* ── 05  DESIGN & ITERATION ── */}
         <section className="cs-section">
-          {/* Intro Row */}
-          <motion.div
-            className="cs-section-grid"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-100px" }}
-          >
+          <motion.div {...sectionProps}>
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">05  Design &amp; iteration</span>
-              <h2 className="cs-section-title">Building the broadcaster experience</h2>
+              <h2 className="cs-section-title">Five pages, two ways to start</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Started with low-fidelity wireframes to test the broadcaster setup flow  the single most critical journey on the platform. Going live had to feel like pressing one button, not configuring a studio. Progressed to high-fidelity dark-mode screens with a strict modular grid designed to work across desktop (primary broadcast surface) and mobile (channel management and monitoring).
+                The site is organised into Home, Broadcasters, Listeners, Pricing and Download, with a Blog in the menu. &quot;Start for free&quot; and &quot;Listen now&quot; sit in the header of every page, next to a language switcher for five languages.
+              </motion.p>
+              <motion.p variants={fadeUp} className="cs-section-body">
+                The look borrows from the product: a dark, studio-like canvas, one bright orange reserved for actions, and full-bleed photography and video of real broadcasters behind their mics.
               </motion.p>
             </motion.div>
           </motion.div>
 
-          {/* Full-span Comparison Breakout */}
-          <motion.div
-            className="cs-full-breakout"
-            variants={fadeUp}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className="cs-before-after cs-before-after--no-arrow">
-              <div className="cs-ba-card cs-ba-card--before">
-                <div className="cs-mockup-card" style={{ border: "none" }}>
-                  <motion.img
-                    src="/projects/waystream/benchmarks.png"
-                    alt="Current Market Benchmarks"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                  />
-                </div>
-                <p><strong>Broadcast setup  6 steps.</strong> YouTube and Anchor require significant configuration  title, description, category, privacy, tags, and audio input  before the 'Go Live' button becomes active.</p>
-              </div>
-              <div className="cs-ba-card cs-ba-card--after">
-                <div className="cs-mockup-card" style={{ border: "none" }}>
-                  <motion.img
-                    src="/projects/waystream/solution.png"
-                    alt="Waystream Proposed Solution"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                  />
-                </div>
-                <p><strong>Broadcast setup  2 steps.</strong> Optimized for mid-service speed. Title and Go Live. Technical settings are handled intelligently in the background and can be adjusted mid-stream.</p>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Iteration Row */}
-          <motion.div
-            className="cs-section-grid"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <div className="cs-section-left"></div>
-            <motion.div className="cs-section-right" variants={staggerContainer}>
-              <motion.h3 variants={fadeUp} className="cs-sub-heading">Iteration & Refinement</motion.h3>
-              <motion.div variants={fadeUp} className="cs-iterations">
-                <div className="cs-iteration">
-                  <span className="cs-iteration-tag">Iteration 1: Feedback</span>
-                  <p>Initial testing showed broadcasters couldn't share their live link without leaving the 'Broadcaster HUD'. Moving away broke the session monitoring and discouraged growth.</p>
-                </div>
-                <div className="cs-iteration">
-                  <span className="cs-iteration-tag">Iteration 2: The 'Live Share' Bridge</span>
-                  <p>Designed a persistent, one-tap sharing bridge directly in the HUD. Instead of hiding the broadcast stats to find a link, broadcasters can now generate and push high-conversion WhatsApp/Instagram links mid-sermon, ensuring growth without breaking the one-tap simplicity.</p>
-                </div>
-              </motion.div>
-            </motion.div>
-          </motion.div>
+          {breakout("/projects/waystream/sitemap.jpg", "Waystream Site Map")}
         </section>
 
         {/* ── 06  OUTCOME & IMPACT ── */}
         <section className="cs-section">
-          <motion.div
-            className="cs-section-grid"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-100px" }}
-          >
+          <motion.div {...sectionProps}>
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">06  Outcome &amp; impact</span>
-              <h2 className="cs-section-title">A new home for African voices</h2>
+              <h2 className="cs-section-title">A live site for every voice</h2>
             </motion.div>
-            <motion.div className="cs-section-right" variants={staggerContainer}>
+            <motion.div className="cs-section-right" variants={staggerContainer} style={{ paddingTop: "39px" }}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Waystream launched as the continent's first dedicated live audio homeoptimizing for the reality of mid-range Android devices and 3G networks. By removing technical and financial friction (Naira payments, one-tap speed), it achieved rapid adoption from the most underserved creators.
+                The site is live and presents Waystream to broadcasters and listeners across five pages, with a free way to start and the apps one click away on every page.
               </motion.p>
             </motion.div>
           </motion.div>
 
-          <motion.div
-            className="cs-full-breakout"
-            variants={fadeUp}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className="cs-mockup-full no-bg">
-              <motion.img
-                src="/projects/waystream/Modular.png"
-                alt="Final Modular Broadcaster Dashboard Shipped"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-              />
-            </div>
-          </motion.div>
+          {breakout("/projects/waystream/outcome.jpg", "Waystream — Why Choose Us")}
 
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-100px" }}
-          >
+          <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}>
             <motion.div variants={fadeUp} className="cs-outcome-grid cs-outcome-grid--full">
               <div className="cs-outcome-card">
-                <span className="cs-outcome-value">40,000+</span>
-                <span className="cs-outcome-delta">Users on the platform</span>
-                <span className="cs-outcome-label">Active Users</span>
+                <span className="cs-outcome-value">2</span>
+                <span className="cs-outcome-delta">Dedicated pages for broadcasters and listeners</span>
+                <span className="cs-outcome-label">Audiences</span>
               </div>
               <div className="cs-outcome-card">
-                <span className="cs-outcome-value">Millions</span>
-                <span className="cs-outcome-delta">Listeners reached</span>
-                <span className="cs-outcome-label">Across Africa</span>
+                <span className="cs-outcome-value">5</span>
+                <span className="cs-outcome-delta">Broadcaster use cases, from podcasts to church services</span>
+                <span className="cs-outcome-label">Use Cases</span>
               </div>
               <div className="cs-outcome-card">
-                <span className="cs-outcome-value">#1</span>
-                <span className="cs-outcome-delta">First dedicated</span>
-                <span className="cs-outcome-label">Live audio platform</span>
+                <span className="cs-outcome-value">5</span>
+                <span className="cs-outcome-delta">Languages available from the header</span>
+                <span className="cs-outcome-label">Languages</span>
               </div>
               <div className="cs-outcome-card">
-                <span className="cs-outcome-value">Local payments</span>
-                <span className="cs-outcome-delta">Removed foreign payment barriers</span>
-                <span className="cs-outcome-label">Creators across Africa can now access premium features in their local currency</span>
+                <span className="cs-outcome-value cs-outcome-value--text">Live</span>
+                <span className="cs-outcome-delta">Published at waystream.io</span>
+                <span className="cs-outcome-label">Status</span>
               </div>
             </motion.div>
           </motion.div>
@@ -475,37 +327,27 @@ export default function WaystreamCaseStudy() {
 
         {/* ── 07  REFLECTION ── */}
         <section className="cs-section">
-          <motion.div
-            className="cs-section-grid"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-100px" }}
-          >
+          <motion.div {...sectionProps}>
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">07  Reflection</span>
-              <h2 className="cs-section-title">What I learned</h2>
+              <h2 className="cs-section-title">Designing for both sides of the mic</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.div variants={fadeUp} className="cs-reflection-grid">
                 <div className="cs-reflection-card">
                   <h4>What worked well</h4>
-                  <p>Committing to audio-only wasn't a limitation  it was the product's biggest strength. It meant lower bandwidth requirements, simpler interfaces, and a focused experience that video platforms couldn't replicate. The dark-mode-first aesthetic also reduced cognitive load for creators managing live broadcasts under pressure.</p>
+                  <p>Splitting the story into Broadcaster and Listener pages, while sharing one layout and one action colour, let the site speak to two audiences without feeling like two different products.</p>
                 </div>
                 <div className="cs-reflection-card">
-                  <h4>What I'd do differently</h4>
-                  <p>I'd invest more time upfront mapping the donation flow specifically for church use cases. It became the most-used monetisation feature but was designed relatively late. Earlier focus there would have produced a more refined experience at launch.</p>
-                </div>
-                <div className="cs-reflection-card">
-                  <h4>Next steps / v2</h4>
-                  <p>A lightweight mobile-first broadcast mode for creators who go live from their phones regularly  stripped down to title, one-tap live, and live chat. No dashboard, no settings. Just broadcast.</p>
+                  <h4>What I&apos;d explore next</h4>
+                  <p>Bringing more of the listener experience onto the homepage, so people who arrive to listen can find something to play before they are asked to download the app.</p>
                 </div>
               </motion.div>
             </motion.div>
           </motion.div>
         </section>
 
-        {/* ── 08  DISCOVERY GRID (v4) ── */}
+        {/* ── 08  DISCOVERY GRID ── */}
         <section className="cs-discovery">
           <div className="discovery-header">
             <h3>More Case Studies</h3>
@@ -514,7 +356,7 @@ export default function WaystreamCaseStudy() {
           <div className="discovery-grid DiscoveryGrid-2col">
             <Link href="/projects/drive45" className="discovery-card">
               <div className="discovery-image">
-                <Image src="/projects/drive45/mockup-card.jpg" alt="Drive45" width={400} height={300} />
+                <Image src="/projects/drive45/mockup-card.jpg" alt="Drive45 Mobility" width={400} height={300} />
               </div>
               <div className="discovery-info">
                 <h4>Drive45 Mobility</h4>
@@ -522,17 +364,16 @@ export default function WaystreamCaseStudy() {
               </div>
             </Link>
 
-            <Link href="/projects/logistic-app" className="discovery-card">
+            <Link href="/projects/whitestone" className="discovery-card">
               <div className="discovery-image">
-                <Image src="/projects/Logistic/hero.png" alt="Operations Management Platform" width={400} height={300} />
+                <Image src="/projects/whitestone/mockup-card.jpg" alt="Whitestone" width={400} height={300} />
               </div>
               <div className="discovery-info">
-                <h4>Operations Management Platform</h4>
-                <span>Logistics &amp; Operations</span>
+                <h4>Whitestone</h4>
+                <span>Healthcare &amp; Special Needs</span>
               </div>
             </Link>
           </div>
-
         </section>
         <Footer />
       </div>

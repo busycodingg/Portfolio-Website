@@ -470,7 +470,7 @@ export default function ErastusQuartusCaseStudy() {
           <div className="discovery-grid DiscoveryGrid-2col">
             <Link href="/projects/waystream" className="discovery-card">
               <div className="discovery-image">
-                <Image src="/projects/waystream/hero.png" alt="Waystream" width={400} height={300} />
+                <Image src="/projects/waystream/mockup-featured.jpg" alt="Waystream" width={400} height={300} />
               </div>
               <div className="discovery-info">
                 <h4>Waystream</h4>
