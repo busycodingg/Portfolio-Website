@@ -1,14 +1,15 @@
 import ProjectClient from "./ProjectClient";
 
+const description =
+  "The website for Drive45, Nigeria's first vehicle subscription platform — designed to explain rent-to-own in plain terms and route individuals, enterprise employees and businesses to the right way to sign up.";
+
 export const metadata = {
   title: "Drive45 Mobility Case Study — Grace",
-  description:
-    "Most Nigerians can't afford a vehicle outright. Drive45 changes that through a rent-to-own subscription model, designed from scratch and now putting people in cars across Nigeria.",
+  description,
   openGraph: {
     title: "Drive45 Mobility Case Study — Grace",
-    description:
-      "Most Nigerians can't afford a vehicle outright. Drive45 changes that through a rent-to-own subscription model, designed from scratch and now putting people in cars across Nigeria.",
-    images: ["/projects/drive45/hero.png"],
+    description,
+    images: ["/projects/drive45/hero.jpg"],
   },
 };
 

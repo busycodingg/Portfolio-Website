@@ -514,7 +514,7 @@ export default function WaystreamCaseStudy() {
           <div className="discovery-grid DiscoveryGrid-2col">
             <Link href="/projects/drive45" className="discovery-card">
               <div className="discovery-image">
-                <Image src="/projects/drive45/hero.png" alt="Drive45" width={400} height={300} />
+                <Image src="/projects/drive45/mockup-card.jpg" alt="Drive45" width={400} height={300} />
               </div>
               <div className="discovery-info">
                 <h4>Drive45 Mobility</h4>

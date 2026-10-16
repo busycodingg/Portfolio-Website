@@ -480,7 +480,7 @@ export default function ErastusQuartusCaseStudy() {
 
             <Link href="/projects/drive45" className="discovery-card">
               <div className="discovery-image">
-                <Image src="/projects/drive45/hero.png" alt="Drive45 Mobility" width={400} height={300} />
+                <Image src="/projects/drive45/mockup-card.jpg" alt="Drive45 Mobility" width={400} height={300} />
               </div>
               <div className="discovery-info">
                 <h4>Drive45 Mobility</h4>
