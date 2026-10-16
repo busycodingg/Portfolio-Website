@@ -126,7 +126,7 @@ export default function Home() {
                             </div>
                             <div className="headline-row">
                                 {/* <span className="pill image-pill headshot"></span>  */}
-                                 a Product Designer
+                                 a UX/UI Designer
                             </div>
                             <div className="headline-row">
                                 I make complexity
@@ -282,7 +282,7 @@ export default function Home() {
                         <p className="section-eyebrow">{"// About"}</p>
                         <ScrollRevealNarrative
                             paragraphs={[
-                                "I'm a product designer who believes good design starts with understanding people, not pixels.",
+                                "I'm a UX/UI designer who believes good design starts with understanding people, not pixels.",
                                 "I work at the intersection of research and craft  turning messy problems into experiences that feel effortless to use."
                             ]}
                             highlightPhrases={["understanding people", "experiences that feel effortless to use"]}
