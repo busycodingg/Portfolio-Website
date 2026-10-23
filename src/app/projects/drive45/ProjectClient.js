@@ -88,7 +88,7 @@ export default function Drive45CaseStudy() {
               </motion.h1>
 
               <motion.p variants={fadeUp} className="case-study-body-text" style={{ marginTop: "2rem" }}>
-                The website for Nigeria&apos;s first vehicle subscription platform — designed to explain rent-to-own in plain terms and route individuals, enterprise employees and businesses to the right way to sign up.
+                The website for Nigeria&apos;s first vehicle subscription platform, designed to explain rent-to-own in plain terms and route individuals, enterprise employees and businesses to the right way to sign up.
               </motion.p>
 
               <motion.div variants={fadeUp} className="case-study-meta">
@@ -161,7 +161,7 @@ export default function Drive45CaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Drive45 was founded in June 2021 to make vehicle ownership easier for enterprises, and has since grown to serve individuals too — from salaried workers the banks won&apos;t lend to, to SMEs and multinationals. Instead of a loan or an outright purchase, customers pay a monthly subscription over an agreed tenure and own the vehicle at the end.
+                Drive45 was founded in June 2021 to make vehicle ownership easier for enterprises, and has since grown to serve individuals too, from salaried workers the banks won&apos;t lend to, to SMEs and multinationals. Instead of a loan or an outright purchase, customers pay a monthly subscription over an agreed tenure and own the vehicle at the end.
               </motion.p>
               <motion.p variants={fadeUp} className="cs-section-body">
                 Vehicle subscription is unfamiliar to most visitors, and the site has to speak to very different people at once. I designed the structure and interface so the model reads as simple and low-risk, and so each type of customer can find their own way in.
@@ -180,7 +180,7 @@ export default function Drive45CaseStudy() {
             </motion.div>
           </motion.div>
 
-          {breakout("/projects/drive45/problem.jpg", "Drive45 — About page and company story")}
+          {breakout("/projects/drive45/problem.jpg", "Drive45 About page and company story")}
 
           <motion.div {...sectionProps} className="cs-section-grid cs-section-grid--centered">
             <motion.div className="cs-section-right" variants={staggerContainer}>
@@ -203,14 +203,14 @@ export default function Drive45CaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                The homepage reads as one argument from top to bottom: what Drive45 offers, who already trusts it, how the model works, what you can drive, and how to start — with the questions people still have answered in an FAQ at the end.
+                The homepage reads as one argument from top to bottom: what Drive45 offers, who already trusts it, how the model works, what you can drive, and how to start. An FAQ at the end answers the questions people still have.
               </motion.p>
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">What shaped the structure</motion.h3>
               <motion.div variants={fadeUp} className="cs-insights">
                 <div className="cs-insight">
                   <span className="cs-insight-num">1</span>
-                  <p>The hero leads with the outcome — becoming a vehicle owner — and the word &quot;subscription&quot; comes second, followed straight away by the logos of companies that already use Drive45.</p>
+                  <p>The hero leads with the outcome, becoming a vehicle owner, and the word &quot;subscription&quot; comes second, followed straight away by the logos of companies that already use Drive45.</p>
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">2</span>
@@ -238,7 +238,7 @@ export default function Drive45CaseStudy() {
                   <span className="cs-principle-num">Principle 01</span>
                   <div className="cs-principle-content">
                     <h4>Turn the model into three plain promises</h4>
-                    <p>&quot;An easier way to own a vehicle&quot; breaks the offer into three cards — Rent to Own, Flexible and Bundled Services — covering the monthly payments, the option to opt out after 15 months, and the insurance and maintenance included.</p>
+                    <p>&quot;An easier way to own a vehicle&quot; breaks the offer into three cards (Rent to Own, Flexible and Bundled Services) covering the monthly payments, the option to opt out after 15 months, and the insurance and maintenance included.</p>
                     {principleImg("/projects/drive45/principle-1.jpg", "Principle 01: Turn the model into three plain promises")}
                   </div>
                 </div>
@@ -246,7 +246,7 @@ export default function Drive45CaseStudy() {
                   <span className="cs-principle-num">Principle 02</span>
                   <div className="cs-principle-content">
                     <h4>Give every customer their own door</h4>
-                    <p>Individual users, individual enterprise users and enterprises each get a card that describes them in their own terms and offers the right action — Get Started for new customers, Login for employees whose organisation is already on Drive45.</p>
+                    <p>Individual users, individual enterprise users and enterprises each get a card that describes them in their own terms and offers the right action: Get Started for new customers, Login for employees whose organisation is already on Drive45.</p>
                     {principleImg("/projects/drive45/principle-2.jpg", "Principle 02: Give every customer their own door")}
                   </div>
                 </div>
@@ -254,7 +254,7 @@ export default function Drive45CaseStudy() {
                   <span className="cs-principle-num">Principle 03</span>
                   <div className="cs-principle-content">
                     <h4>Show the cars, not just the contract</h4>
-                    <p>A dark &quot;Rent it to Own it&quot; band shows the vehicle categories — sedans, SUVs, and pickups &amp; light trucks — with real photography, so a financing product feels like getting a car.</p>
+                    <p>A dark &quot;Rent it to Own it&quot; band shows the vehicle categories (sedans, SUVs, and pickups &amp; light trucks) with real photography, so a financing product feels like getting a car.</p>
                     {principleImg("/projects/drive45/principle-3.jpg", "Principle 03: Show the cars, not just the contract")}
                   </div>
                 </div>

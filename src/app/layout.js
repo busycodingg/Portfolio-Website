@@ -18,19 +18,19 @@ const playfair = Playfair_Display({
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://graceamoko.vercel.app"),
   title: {
-    default: "Grace — UX/UI Designer",
+    default: "Grace | UX/UI Designer",
     template: "%s",
   },
   description: "Portfolio of Grace, a UX/UI Designer who makes complexity feel invisible.",
   openGraph: {
-    title: "Grace — UX/UI Designer",
+    title: "Grace | UX/UI Designer",
     description: "Portfolio of Grace, a UX/UI Designer who makes complexity feel invisible.",
     siteName: "Grace Portfolio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Grace — UX/UI Designer",
+    title: "Grace | UX/UI Designer",
     description: "Portfolio of Grace, a UX/UI Designer who makes complexity feel invisible.",
   },
   robots: { index: false, follow: false },

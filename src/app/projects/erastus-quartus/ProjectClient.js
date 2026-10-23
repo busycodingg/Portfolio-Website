@@ -50,7 +50,7 @@ export default function ErastusQuartusCaseStudy() {
               </motion.h1>
 
               <motion.p variants={fadeUp} className="case-study-body-text" style={{ marginTop: '2rem' }}>
-                A corporate website for a Nigerian construction and structural engineering firm — built from a client-provided company profile into a structured site with its own information architecture and copy.
+                A corporate website for a Nigerian construction and structural engineering firm, built from a client-provided company profile into a structured site with its own information architecture and copy.
               </motion.p>
 
               <motion.div variants={fadeUp} className="case-study-meta">
@@ -72,7 +72,7 @@ export default function ErastusQuartusCaseStudy() {
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">Status</span>
-                    <span className="meta-value">Design Completed — Not Yet Live</span>
+                    <span className="meta-value">Design Completed, Not Yet Live</span>
                   </div>
                 </div>
                 <hr className="meta-divider" />
@@ -118,7 +118,7 @@ export default function ErastusQuartusCaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Erastus Quartus Projects is a working construction and structural engineering firm with a track record of completed projects and a qualified team — documented in detail in an internal company profile, but with no website to put any of it in front of a prospective client.
+                Erastus Quartus Projects is a working construction and structural engineering firm with a track record of completed projects and a qualified team, documented in detail in an internal company profile, but with no website to put any of it in front of a prospective client.
               </motion.p>
               <motion.p variants={fadeUp} className="cs-section-body">
                 I was brought on to turn that raw company profile into a site: deciding what belongs on a homepage versus a services page, how to present past projects credibly, and writing every word of the on-page copy from scratch, since the source document was written as an internal profile, not website content.
@@ -191,14 +191,14 @@ export default function ErastusQuartusCaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                The client's company profile covered services, completed projects, and team bios — but as a dense internal document, not a website outline. The real design work started with pulling that document apart: what needed its own page, what was proof versus persuasion, and what a first-time visitor actually needed to see before they'd consider reaching out.
+                The client's company profile covered services, completed projects, and team bios, but as a dense internal document, not a website outline. The real design work started with pulling that document apart: what needed its own page, what was proof versus persuasion, and what a first-time visitor actually needed to see before they'd consider reaching out.
               </motion.p>
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">What the profile revealed</motion.h3>
               <motion.div variants={fadeUp} className="cs-insights">
                 <div className="cs-insight">
                   <span className="cs-insight-num">1</span>
-                  <p>Completed projects carried more credibility as structured facts — location, scope, structural system — than as prose. The profile listed them narratively; the site needed a scannable format.</p>
+                  <p>Completed projects carried more credibility as structured facts (location, scope, structural system) than as prose. The profile listed them narratively; the site needed a scannable format.</p>
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">2</span>
@@ -206,7 +206,7 @@ export default function ErastusQuartusCaseStudy() {
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">3</span>
-                  <p>Construction clients are used to formal enquiry and RFQ processes — a generic contact form would under-collect the information the firm actually needs to respond usefully.</p>
+                  <p>Construction clients are used to formal enquiry and RFQ processes, so a generic contact form would under-collect the information the firm actually needs to respond usefully.</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -232,7 +232,7 @@ export default function ErastusQuartusCaseStudy() {
                   <span className="cs-principle-num">Principle 01</span>
                   <div className="cs-principle-content">
                     <h4>Facts over adjectives</h4>
-                    <p>Every completed project is presented through a consistent facts bar — location, scope, structural type, timeline — rather than descriptive copy alone, so credibility is scannable, not just claimed.</p>
+                    <p>Every completed project is presented through a consistent facts bar (location, scope, structural type, timeline) rather than descriptive copy alone, so credibility is scannable, not just claimed.</p>
                     <div className="cs-principle-mockup">
                       <motion.img
                         src="/projects/erastus-quartus/principle 1.png"
@@ -250,7 +250,7 @@ export default function ErastusQuartusCaseStudy() {
                   <span className="cs-principle-num">Principle 02</span>
                   <div className="cs-principle-content">
                     <h4>Credentials build trust before conversation</h4>
-                    <p>A dedicated "Meet Our Experts" section gives each team member a name, title, and qualification — moving the firm's expertise from a buried paragraph to a visible, browsable part of the site.</p>
+                    <p>A dedicated "Meet Our Experts" section gives each team member a name, title, and qualification, moving the firm's expertise from a buried paragraph to a visible, browsable part of the site.</p>
                     <div className="cs-principle-mockup">
                       <motion.img
                         src="/projects/erastus-quartus/principle 2.png"
@@ -268,7 +268,7 @@ export default function ErastusQuartusCaseStudy() {
                   <span className="cs-principle-num">Principle 03</span>
                   <div className="cs-principle-content">
                     <h4>A structured enquiry, not a blank form</h4>
-                    <p>A 3-step enquiry flow — project type, scope details, contact information — collects what the firm actually needs to respond meaningfully, instead of a single open text field.</p>
+                    <p>A 3-step enquiry flow (project type, scope details, contact information) collects what the firm actually needs to respond meaningfully, instead of a single open text field.</p>
                     <div className="cs-principle-mockup">
                       <motion.img
                         src="/projects/erastus-quartus/principle 3.png"
@@ -303,10 +303,10 @@ export default function ErastusQuartusCaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Started by restructuring the company profile's content into a site map — Home, Services, Projects, About/Team, Contact — before any visual design. Every project entry was rebuilt around the facts-bar format, and the team section was rebuilt around individual expert profiles rather than a single group bio.
+                Started by restructuring the company profile's content into a site map (Home, Services, Projects, About/Team, Contact) before any visual design. Every project entry was rebuilt around the facts-bar format, and the team section was rebuilt around individual expert profiles rather than a single group bio.
               </motion.p>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Because the source document wasn't written as website copy, I wrote every on-page word myself — headlines, service descriptions, project summaries, and calls to action — grounded in the facts from the profile but shaped for how a visitor actually reads a site, not a document.
+                Because the source document wasn't written as website copy, I wrote every on-page word myself: headlines, service descriptions, project summaries, and calls to action, grounded in the facts from the profile but shaped for how a visitor actually reads a site, not a document.
               </motion.p>
             </motion.div>
           </motion.div>
@@ -348,7 +348,7 @@ export default function ErastusQuartusCaseStudy() {
                 </div>
                 <div className="cs-iteration">
                   <span className="cs-iteration-tag">Iteration 2: Refinement</span>
-                  <p>Split the homepage down to a focused introduction and top project highlights, moving full service and project detail to their own pages — letting the facts-bar format do the credibility work instead of front-loading text.</p>
+                  <p>Split the homepage down to a focused introduction and top project highlights, moving full service and project detail to their own pages, letting the facts-bar format do the credibility work instead of front-loading text.</p>
                 </div>
                 <div className="cs-iteration">
                   <span className="cs-iteration-tag">Iteration 3: Enquiry flow</span>
@@ -374,7 +374,7 @@ export default function ErastusQuartusCaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer} style={{ paddingTop: '39px' }}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                The design is complete — full site structure, all page templates, and all on-page copy — and ready to hand off for development. It hasn't gone live yet.
+                The design is complete, with the full site structure, all page templates and all on-page copy ready to hand off for development. It hasn't gone live yet.
               </motion.p>
             </motion.div>
           </motion.div>
@@ -446,11 +446,11 @@ export default function ErastusQuartusCaseStudy() {
               <motion.div variants={fadeUp} className="cs-reflection-grid">
                 <div className="cs-reflection-card">
                   <h4>What worked well</h4>
-                  <p>Rebuilding the site map before touching visuals. Restructuring the company profile into a proper information architecture first made every later decision — what goes where, what gets its own page — much clearer.</p>
+                  <p>Rebuilding the site map before touching visuals. Restructuring the company profile into a proper information architecture first made every later decision, like what goes where and what gets its own page, much clearer.</p>
                 </div>
                 <div className="cs-reflection-card">
                   <h4>What I'd do differently</h4>
-                  <p>Loop the client in earlier on the copy, not just the layout — since I was writing content from their internal document rather than a brief, earlier review rounds would have caught tone mismatches sooner.</p>
+                  <p>Loop the client in earlier on the copy, not just the layout. Since I was writing content from their internal document rather than a brief, earlier review rounds would have caught tone mismatches sooner.</p>
                 </div>
                 <div className="cs-reflection-card">
                   <h4>Next steps</h4>

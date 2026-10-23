@@ -88,7 +88,7 @@ export default function WhitestoneCaseStudy() {
               </motion.h1>
 
               <motion.p variants={fadeUp} className="case-study-body-text" style={{ marginTop: "2rem" }}>
-                A website for a Lagos clinic supporting neurodiverse children — designed and written so parents who aren&apos;t sure where to start can understand the services, see the path ahead, and book a free consultation.
+                A website for a Lagos clinic supporting neurodiverse children, designed and written so parents who aren&apos;t sure where to start can understand the services, see the path ahead, and book a free consultation.
               </motion.p>
 
               <motion.div variants={fadeUp} className="case-study-meta">
@@ -110,7 +110,7 @@ export default function WhitestoneCaseStudy() {
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">Status</span>
-                    <span className="meta-value">Live — Still Being Refined</span>
+                    <span className="meta-value">Live, Still Being Refined</span>
                   </div>
                 </div>
                 <hr className="meta-divider" />
@@ -161,7 +161,7 @@ export default function WhitestoneCaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Whitestone is a Lagos-based clinic supporting neurodiverse children and vulnerable learners — from autism and ADHD to speech delay and learning disabilities — with on-site care in Lagos and remote support for families across Nigeria and abroad.
+                Whitestone is a Lagos-based clinic supporting neurodiverse children and vulnerable learners, from autism and ADHD to speech delay and learning disabilities. It offers on-site care in Lagos and remote support for families across Nigeria and abroad.
               </motion.p>
               <motion.p variants={fadeUp} className="cs-section-body">
                 The challenge was a site that could hold a wide range of specialised services without overwhelming the person reading it: a parent who has noticed something about their child and isn&apos;t sure what to call it, what an assessment involves, or whether this clinic is the right fit. I designed the structure and wrote the on-page copy, aiming for a tone that is warm and clear rather than clinical.
@@ -174,13 +174,13 @@ export default function WhitestoneCaseStudy() {
                 </div>
                 <div className="cs-card">
                   <span className="cs-card-tag">User problem</span>
-                  <p>A parent noticing delays in speech, attention, learning or behaviour needs reassurance and a clear next step — not clinical jargon or a long catalogue of services.</p>
+                  <p>A parent noticing delays in speech, attention, learning or behaviour needs reassurance and a clear next step, not clinical jargon or a long catalogue of services.</p>
                 </div>
               </motion.div>
             </motion.div>
           </motion.div>
 
-          {breakout("/projects/whitestone/problem.jpg", "Whitestone — why families choose the clinic")}
+          {breakout("/projects/whitestone/problem.jpg", "Whitestone: why families choose the clinic")}
 
           <motion.div {...sectionProps} className="cs-section-grid cs-section-grid--centered">
             <motion.div className="cs-section-right" variants={staggerContainer}>
@@ -210,7 +210,7 @@ export default function WhitestoneCaseStudy() {
               <motion.div variants={fadeUp} className="cs-insights">
                 <div className="cs-insight">
                   <span className="cs-insight-num">1</span>
-                  <p>The homepage leads with the conditions families already recognise — autism, ADHD, Down syndrome, speech and language delay, learning disabilities and developmental delay — each with its own card, so a parent can find their child before meeting any clinical terminology.</p>
+                  <p>The homepage leads with the conditions families already recognise (autism, ADHD, Down syndrome, speech and language delay, learning disabilities and developmental delay), each with its own card, so a parent can find their child before meeting any clinical terminology.</p>
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">2</span>
@@ -246,7 +246,7 @@ export default function WhitestoneCaseStudy() {
                   <span className="cs-principle-num">Principle 02</span>
                   <div className="cs-principle-content">
                     <h4>Show the whole path before the first call</h4>
-                    <p>A six-step journey — from first enquiry and parent interview through assessment, planning, therapy and ongoing re-evaluation — makes the process visible, so booking feels less like a leap into the unknown.</p>
+                    <p>A six-step journey, from first enquiry and parent interview through assessment, planning, therapy and ongoing re-evaluation, makes the process visible, so booking feels less like a leap into the unknown.</p>
                     {principleImg("/projects/whitestone/principle-2.jpg", "Principle 02: Show the whole path before the first call")}
                   </div>
                 </div>

@@ -88,7 +88,7 @@ export default function WaystreamCaseStudy() {
               </motion.h1>
 
               <motion.p variants={fadeUp} className="case-study-body-text" style={{ marginTop: "2rem" }}>
-                The website for an audio live-streaming platform — designed to speak to broadcasters and listeners separately, and to get both of them to start for free.
+                The website for an audio live-streaming platform, designed to speak to broadcasters and listeners separately, and to get both of them to start for free.
               </motion.p>
 
               <motion.div variants={fadeUp} className="case-study-meta">
@@ -180,7 +180,7 @@ export default function WaystreamCaseStudy() {
             </motion.div>
           </motion.div>
 
-          {breakout("/projects/waystream/problem.jpg", "Waystream — Stream, Listen and Share")}
+          {breakout("/projects/waystream/problem.jpg", "Waystream: Stream, Listen and Share")}
 
           <motion.div {...sectionProps} className="cs-section-grid cs-section-grid--centered">
             <motion.div className="cs-section-right" variants={staggerContainer}>
@@ -203,7 +203,7 @@ export default function WaystreamCaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                The homepage introduces Waystream to everyone in three verbs — Stream, Listen, Share — and then each audience gets its own page with its own story, before Pricing and Download close the loop.
+                The homepage introduces Waystream to everyone in three verbs (Stream, Listen, Share), and then each audience gets its own page with its own story, before Pricing and Download close the loop.
               </motion.p>
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">What shaped the structure</motion.h3>
@@ -214,7 +214,7 @@ export default function WaystreamCaseStudy() {
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">2</span>
-                  <p>The Broadcasters page is organised by use case — livestreams, podcasts, events, church services and radio shows — so each type of broadcaster can recognise themselves.</p>
+                  <p>The Broadcasters page is organised by use case (livestreams, podcasts, events, church services and radio shows) so each type of broadcaster can recognise themselves.</p>
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">3</span>
@@ -238,7 +238,7 @@ export default function WaystreamCaseStudy() {
                   <span className="cs-principle-num">Principle 01</span>
                   <div className="cs-principle-content">
                     <h4>Give each audience its own voice</h4>
-                    <p>The Broadcasters page opens with &quot;Express Your Voice&quot; and Start for free; the Listeners page opens with &quot;Stream for free&quot; and Start listening — the same layout, with a different promise and a different action.</p>
+                    <p>The Broadcasters page opens with &quot;Express Your Voice&quot; and Start for free; the Listeners page opens with &quot;Stream for free&quot; and Start listening. Same layout, different promise and a different action.</p>
                     {principleImg("/projects/waystream/principle-1.jpg", "Principle 01: Give each audience its own voice")}
                   </div>
                 </div>
@@ -246,7 +246,7 @@ export default function WaystreamCaseStudy() {
                   <span className="cs-principle-num">Principle 02</span>
                   <div className="cs-principle-content">
                     <h4>Show the studio, not just the claim</h4>
-                    <p>Instead of describing the broadcasting tools, &quot;Broadcasting Made Easy&quot; shows the live studio itself — mic and playlist levels, the live timer, the Go Live button and the audience chat — on a laptop.</p>
+                    <p>Instead of describing the broadcasting tools, &quot;Broadcasting Made Easy&quot; shows the live studio itself on a laptop: mic and playlist levels, the live timer, the Go Live button and the audience chat.</p>
                     {principleImg("/projects/waystream/principle-2.jpg", "Principle 02: Show the studio, not just the claim")}
                   </div>
                 </div>
@@ -297,7 +297,7 @@ export default function WaystreamCaseStudy() {
             </motion.div>
           </motion.div>
 
-          {breakout("/projects/waystream/outcome.jpg", "Waystream — Why Choose Us")}
+          {breakout("/projects/waystream/outcome.jpg", "Waystream: Why Choose Us")}
 
           <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}>
             <motion.div variants={fadeUp} className="cs-outcome-grid cs-outcome-grid--full">
